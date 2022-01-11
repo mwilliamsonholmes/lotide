@@ -7,5 +7,6 @@ const assertEqual = function(actual, expected) {
 };
 assertEqual("Lighthouse Labs", "Hi");
 assertEqual(1, 5);
+//checking
 
 
