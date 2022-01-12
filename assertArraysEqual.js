@@ -20,16 +20,5 @@ if (eqArrays(a, b)) {
   console.log(`Assertion Failed: ${a} !== ${b}`);
 }
 }
-assertArraysEqual([1,2], [1, 3]);
+assertArraysEqual([1,2], [1, "2"]);
 
-
-
-
-// const assertArraysEqual = function(arr1, arr2) {
-//   eqArrays(arr1, arr2);
-// if (eqArrays === true) {
-//   console.log(`Assertion Passed: ${arr1} === ${arr2}`);
-// } else if (eqArrays === false) {
-//   console.log(`Assertion Failed: ${arr1} !== ${arr2}`);
-// }
-// }
