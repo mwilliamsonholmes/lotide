@@ -1,24 +1,12 @@
-function eqArrays(a, b) {
-  if (a.length === b.length) {
-      for (let i = 0; i < a.length; i++) {
-          if (a[i] !== b[i]) {
-              return false;
-          }
-      }
-      return true;
+const eqArrays = require('./eqArrays');
+
+//take 2 arrays and console.log message if true or false
+function assertArraysEqual(a, b) {
+  if (eqArrays(a, b)) {
+    console.log(`Assertion Passed: ${a} === ${b}`);
   } else {
-      return false;
+    console.log(`Assertion Failed: ${a} !== ${b}`);
   }
 }
-// console.log(eqArrays([1, 2], [1, 2]));
-
-
-function assertArraysEqual(a, b){
-if (eqArrays(a, b)) {
-  console.log(`Assertion Passed: ${a} === ${b}`);
-} else {
-  console.log(`Assertion Failed: ${a} !== ${b}`);
-}
-}
-assertArraysEqual([1,2], [1, "2"]);
+module.exports = assertArraysEqual;
 
